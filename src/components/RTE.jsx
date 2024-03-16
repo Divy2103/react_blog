@@ -11,7 +11,7 @@ function RTE({ name, control, label, defaultValue = "" }) {
         control={control}
         render={({ field: { onChange } }) => (
           <Editor
-            apiKey='wb14iob8kclnd6zbhf1ehzwctz2rwkmp0php3cw9ppq1j6cv'
+            apiKey={process.env.REACT_APP_TINY_MCE_API_KEY}
             initialValue={defaultValue}
             init={{
               initialValue: defaultValue,
